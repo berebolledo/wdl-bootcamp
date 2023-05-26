@@ -3,7 +3,7 @@ workflow SamtoolsMetrics {
   input {
     File inputBam 
   }
-  call  {
+  call Metrics {
     input: 
       bam_name = inputBam
   }
